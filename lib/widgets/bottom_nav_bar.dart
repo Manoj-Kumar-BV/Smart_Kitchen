@@ -11,6 +11,8 @@ class BottomNavBar extends StatelessWidget {
     return BottomNavigationBar(
       currentIndex: selectedIndex,
       onTap: onItemTapped,
+      selectedItemColor: Colors.green,  // Ensures selected icon is visible
+      unselectedItemColor: Colors.grey, // Ensures other icons are visible
       items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
         BottomNavigationBarItem(icon: Icon(Icons.book), label: "Recipes"),
